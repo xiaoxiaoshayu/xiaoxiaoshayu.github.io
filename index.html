@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>用户注册/登陆</title>
+    </head>
+    <br/><br/>
 
-<head>
-   <title>小小鲨鱼网站</title>
-   <style>
-       h1{
-           border : 3px solid thistle;
-           width: 300px;
-           height: 300px;
-       }
+<!--align="center"表局中操作-->
 
-   </style>
-</head>
-
-<br/><br/><br/>
-<table border="8" align="center">
+<table border="12" align="center">
     <th>
         <label style="color: mediumvioletred;font-size: 20px;">国家:</label>
         <select style="width: 140px;height: 60px;color: lightslategray;background: powderblue;">
@@ -30,69 +23,72 @@
         <label style="color: slateblue;font-size: 20px;">学历:</label>
         <select style="width: 140px;height: 60px;color:lightslategray;background: powderblue;">
              <option>请选择</option>
+             <option>高中生</option>
              <option>专科生</option>
              <option>本科生</option>
              <option>研究生</option>
         </select>
     
-        <label style="color: peru;font-size: 20px;">性别:</label>
+        <label style="color: peru;font-size: 20px;">脾气:</label>
         <select style="width: 140px;height: 60px;color: lightslategray;background: powderblue;">
              <option>请选择</option>
-             <option>男</option>
-             <option>女</option>
-             <option>人妖</option>
+             <option>非常好</option>
+             <option>很好</option>
+             <option>比较好</option>
+             <option>一般</option>
+             <option>不太好</option>
+             <option>很差</option>
         </select>
     </th>
 </table>
 
-<br/><br/><br/>
+<br/>
 
-<body background="tu4.jpg" style="width: 750px;">
-
-    <div style=" width:400px; float: left;color: springgreen;">
-        ->点击前往
-        <a href="https://www.bilibili.com/"target="_blank" style="color: paleturquoise; font-size: 50px;"> 哔哩哔哩 </a>
-        <h1>
-            <img width="300px"height="300px"src="tu1.jpg"></img>
-        </h1>
-    </div>
-
-    <div style="float: left;width: 350px;color: springgreen;">
-        -->点击前往
-        <a href="https://www.runoob.com/cprogramming/c-tutorial.html"target="_blank" style="color:paleturquoise;font-size: 50px;">C语言教程</a>
-        <h1>
-            <img width="300"height="300px"src="tu2.jpg"></img>
-        </h1>
-    </div>
-    
-    <p>
-
-    <div style="float: left;width: 400px;color: springgreen;"
-        -->点击前往
-        <a href="https://www.baidu.com"target="_blank" style="color:paleturquoise;font-size: 50px;">百度</a>
-        <h1>
-            <img width="300px"height="300px"src="tu3.jpg"></img>
-        </h1>
-    </div>
-
-    <div style="float: left;width: 350px;color: springgreen;">
-    -->点击前往
-    <a href="https://music.163.com"target="_blank" style="color:paleturquoise;font-size: 50px;">网易云</a>
-    <h1>
-        <img width="300"height="300px"src="tu5.jpeg"></img>
-    </h1>
-    </div>
-
-    <p>
-
-    <div style="float: left;width: 400px;color: springgreen;"
-    -->点击前往
-    <a href="https://fanyi.baidu.com/?aldtype=16047#auto/zh"target="_blank" style="color:paleturquoise;font-size: 50px;">百度翻译</a>
-    <h1>
-        <img width="300px"height="300px"src="tu6.jpeg"></img>
-    </h1>
-    </div>
-
-</body>
-
+    <body>
+        <table border="18" align="center">
+            <th>
+                <form style="color: rgb(5, 15, 9);font-size: 30px;">
+                    <br/>
+                    <table border="8" align="center">
+                        <tr>
+                            <th>新用户注册</th>
+                        </tr>
+                    </table>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;用户名:
+                    <input type="text" name="username" style="height: 26px;"/>
+                    <br/>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别:
+                    <!--checked表示默认的意思-->
+                    <input type="radio" name="gender" value="1" checked style="width: 20px;height: 20px;"/>男
+                    <input type="radio" name="gender" value="0" style="width: 20px;height: 20px;"/>女
+                    <br/>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码:
+                    <input type="password" name="userpwd" style="height: 26px;"/>
+                    <br/>
+                    <br/>
+                    确定密码:
+                    <input type="password" style="height: 26px; "/>
+                    <p>个人掌握状态：</p>
+                    <input type="checkbox" name="interest" value="z" style="width: 20px;height: 20px;"/>唱歌
+                    <input type="checkbox" name="interest" value="x"style="width: 20px;height: 20px;" />抽烟
+                    <input type="checkbox" name="interest" value="c"style="width: 20px;height: 20px;" />打游戏
+                    <input type="checkbox" name="interest" value="v"style="width: 20px;height: 20px;" />喝酒
+                    <input type="checkbox" name="interest" value="n" style="width: 20px;height: 20px;"/>跳舞
+                    <br/><br/>
+                    <input type="reset" value="清空数据" style="width: 96px; height: 40px;"/>
+                    <!--
+                    <input type="submit" value="注册" style="width: 70px;"/>
+                    -->
+                    <br/>
+                    <p>
+                        <a href="https://www.baidu.com"target="_blank" style=" width: 96px; height: 40px; color:rgb(5, 5, 5); border : 6px solid rgb(119, 116, 119);text-decoration: none;">注册</a>
+                    </p>                  
+                    <br/>                   
+                </form>
+            </th>
+        </table>
+    </body>
 </html>
